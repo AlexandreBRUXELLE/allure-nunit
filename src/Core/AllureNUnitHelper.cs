@@ -234,7 +234,7 @@ namespace NUnit.Allure.Core
                 switch (result.Outcome.Status)
                 {
                     case TestStatus.Inconclusive:
-                        return Status.broken;
+                        return Status.none;
                     case TestStatus.Skipped:
                         return Status.skipped;
                     case TestStatus.Passed:
